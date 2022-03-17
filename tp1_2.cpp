@@ -7,10 +7,16 @@ int cuadrado(int num);
 void cuadrado2(int num);
 void direccionycontenido(int var);
 void invertir(int a, int b);
-void orden(int a, int b);
+void ordenar(int a, int b);
 
 int main(){
-    
+    int entero = 2, entero_b = 6;
+    printf("Funcion Cuadrado: %d\n\n", cuadrado(entero));
+    cuadrado2(entero);
+    direccionycontenido(entero);
+    invertir(entero, entero_b);
+    ordenar(entero,entero_b);
+    return 0;
     return 0;
 }
 
@@ -33,7 +39,7 @@ void invertir(int a, int b){
     printf("Funcion invertir:\n Nuevo valor de A: %d\n Nuevo valor de B: %d\n\n", a, b);
 }
 
-void orden(int a, int b){
+void ordenar(int a, int b){
     int aux;
     if(a>b){
         aux = a;
